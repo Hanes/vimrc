@@ -234,7 +234,7 @@ nnoremap <C-]> <C-]>zz
 "---------------------------------------------------------------------------
 
 " Ctrl-[ push tag back to stack (undo Ctrl-t)
-map <C-[> <ESC>:tag<CR>
+noremap <leader><C-]> <ESC>:tag<CR>
 
 " ,g generates the header guard
 map <leader>g :call IncludeGuard()<CR>
@@ -468,7 +468,7 @@ endfun
 
 " --- Trinity {
   nmap <F4> :TrinityToggleAll<CR> 
-  nmap <F5> :TrinityToggleSourceExplorer<CR> 
+  nmap <F5> :set hls<Bar>TrinityToggleSourceExplorer<CR> 
   "nmap <F6> :TrinityToggleTagList<CR> " duplicated
   nmap <F7> :TrinityToggleNERDTree<CR>
 "}
